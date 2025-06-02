@@ -12,6 +12,11 @@
 - 📱 **响应式设计**: 完美适配桌面和移动设备
 - 🎨 **现代UI**: 玻璃态设计风格，优雅的用户界面
 - 🔄 **并排显示**: 聊天界面与图表面板同时显示，提升分析效率
+![屏幕截图 2025-06-02 171526](https://github.com/user-attachments/assets/ddd8bbe2-17aa-477d-b758-d0db79e60625)
+![屏幕截图 2025-06-02 171553](https://github.com/user-attachments/assets/b195a0ce-e3da-425c-9587-cdb5996c883e)
+![屏幕截图 2025-06-02 171544](https://github.com/user-attachments/assets/21bacbd5-a999-4b4c-91f9-0195b66c5a89)
+![屏幕截图 2025-06-02 171535](https://github.com/user-attachments/assets/38916095-8557-4ecd-999d-1f7c5273ce5a)
+![屏幕截图 2025-06-02 171531](https://github.com/user-attachments/assets/5ea9280b-f659-4451-999f-be4862c9101b)
 
 ## 🛠️ 技术栈
 
