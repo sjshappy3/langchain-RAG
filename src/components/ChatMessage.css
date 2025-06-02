@@ -1,0 +1,180 @@
+.message {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.message:hover {
+  background-color: #fafafa;
+}
+
+.message.user {
+  background-color: #ffffff;
+}
+
+.message.assistant {
+  background-color: #f9fafb;
+}
+
+.message.error {
+  background-color: #fef2f2;
+  border-left: 4px solid #ef4444;
+}
+
+.message-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.message-avatar {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.assistant-avatar {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.message-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.message-sender {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.message-text {
+  color: #374151;
+  line-height: 1.6;
+  font-size: 1rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.streaming-cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+  color: #2563eb;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.error-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fee2e2;
+  border-radius: 0.5rem;
+  border: 1px solid #fecaca;
+}
+
+.error-icon {
+  font-size: 1rem;
+}
+
+.error-text {
+  font-size: 0.9rem;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .message {
+    padding: 1rem;
+  }
+  
+  .message-wrapper {
+    gap: 0.75rem;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  .message-text {
+    font-size: 0.95rem;
+  }
+  
+  .message-sender {
+    font-size: 0.85rem;
+  }
+  
+  .message-time {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    padding: 0.75rem;
+  }
+  
+  .message-wrapper {
+    gap: 0.5rem;
+  }
+  
+  .avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  
+  .message-text {
+    font-size: 0.9rem;
+  }
+  
+  .message-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
